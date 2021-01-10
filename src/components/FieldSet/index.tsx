@@ -11,11 +11,12 @@ import './style.css';
 export const FieldSet: FC<FieldSetProps> = ({ className = '', children }) => {
   const { title, required, errors } = useExtractDataFromFields(children);
   return (
-    <fieldset className={`${className} fieldset`}>
+    // We use div instead of fieldset, as it has problem with flex-box on some browsers.
+    <div className={`${className} fieldset`}>
       <label className={`lbl fieldset__title ${(errors?.length || 0) > 0 ? 'lbl--error' : ''}`}>
         {`${title}${required ? '*' : ''}`}
       </label>
       {children}
-    </fieldset>
+    </div>
   );
 };
