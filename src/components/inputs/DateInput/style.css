@@ -1,0 +1,13 @@
+ .date-input__container {
+     display: flex;
+     width: 100%;
+ }
+
+ .date-input__input {
+     flex: 1;
+     width: 0;
+ }
+
+ .date-input__input:not(:last-child) {
+    margin-right: var(--form-field-span);
+ }

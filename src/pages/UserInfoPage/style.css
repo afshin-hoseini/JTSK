@@ -1,0 +1,19 @@
+.user-info-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.user-info-page__form {
+    width: 100%;
+}
+
+@media only screen and (min-width:600px) {
+    .user-info-page__form {
+        max-width: 500px;
+        /* In order to bring the input fields in the middle of view scope visually */
+        margin-left: calc(-1 * var(--field-title-min-width));
+    }
+}

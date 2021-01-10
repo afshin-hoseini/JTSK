@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root{
+    --field-title-min-width: 150px;
+    --field-title-padding-right: 25px;
+    --fieldset-child-span: 18px;
+    --form-field-span: 20px;
+
+    --break-tablet: 600px;
+
+    --color-input-bkg : #F1F2EC;
+    --color-focused-input-bkg: #FEFFFF;
+    --color-neutral-input-border : #A6A7A8;
+    --color-focused-input-border: #2BA1B6;
+    --color-accent : #4E5B63;
+    --color-error: rgb(255, 129, 129);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    font-family:Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Text input themes */
+.text-input {
+    background-color:var(--color-input-bkg);
+    border: 1px solid var(--color-neutral-input-border);
+    min-height: 35px;
+    outline: none;
+    font-size: small;
+    padding: 0 10px;
+    transition: all 0.2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-input:focus {
+    background-color: var(--color-focused-input-bkg);
+    border: 1px solid var(--color-focused-input-border);
 }
 
-.App-link {
-  color: #61dafb;
+/* Button tehem */
+.btn {
+    background-color: var(--color-input-bkg);
+    border: 1px solid var(--color-neutral-input-border);
+    padding: 8px 12px;
+    outline: unset;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:disabled{
+    cursor: not-allowed;
+}
+
+.btn:active {
+    filter: brightness(0.9);
+}
+
+.btn:disabled {
+    filter: grayscale(1);
+}
+
+/* Submit button theme */
+.btn--submit {
+    background-color: #77aab3;
+    color: white;
+    font-weight: bold;
+}
+
+/* Label themes */
+.lbl {
+    font-weight: bold;
+    font-size: small;
+}
+
+.lbl--error {
+    color: var(--color-error);
 }

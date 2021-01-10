@@ -1,0 +1,21 @@
+.info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Determines the vertical span between fields and/or fieldsets*/
+.info-form > .field:not(:first-child) , .info-form > .fieldset:not(:first-child) {
+    margin-top: var(--form-field-span);
+}
+
+.info-form__submit {
+    align-self: stretch;
+    margin: 25px 0 8px 0;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .info-form__submit {
+        align-self: flex-end ;
+    }
+}

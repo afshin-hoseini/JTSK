@@ -1,0 +1,39 @@
+.fieldset {
+    display: flex;
+    border: unset;
+    margin: unset;
+    padding: unset;
+}
+
+/* On mobile devices the title won't be shown */
+.fieldset__title {
+    display: none;
+}
+
+.fieldset > .field:not(:last-of-type) {
+    margin-right: var(--fieldset-child-span);
+}
+
+/* Tablet or desktop */
+@media only screen and (min-width: 600px) {
+
+    .fieldset {
+        display: flex;
+        align-items: center;
+    }
+    
+    .fieldset__title {
+        display: block;
+        width: var(--field-title-min-width);
+        padding-right: var(--field-title-padding-right);
+        text-align: right;
+
+    }
+
+    /* The field titles under a fieldset component must not be 
+        shown on tablet and desktops since the title presentation would be handled by fieldset itself 
+    */
+    .fieldset .field__title {
+        display: none !important;
+    }
+}

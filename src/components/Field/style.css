@@ -1,0 +1,26 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field--keep-title-in-row {
+    flex-direction: row !important;
+}
+
+.field__title {
+    padding-right: var(--field-title-padding-right);
+    padding-bottom: 4px;
+}
+
+/* Tablet and desktop */
+@media only screen and (min-width: 600px) {
+    .field {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .field__title {
+        min-width: var(--field-title-min-width);
+        text-align: right;
+    }
+}
