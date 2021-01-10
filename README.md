@@ -2,15 +2,15 @@
 Representing a React application rendering a form to acquire a user's information.
 
 ## Launched Demo
-You can visit the [launched version]() of this app.
+You can visit the [launched version](https://juniqe-assignment.vercel.app/) of this app.
 
-## Language
+## Programing Syntax
 This project implemented using Typescript.
 
 ## Framework
 This project has been initialized and maintained through [Create React App (CRA)](https://github.com/facebook/create-react-app).
 
-## Running the product
+## Run product on local machine
 Assuming you have `node` and `npm` installed, run the codes below.
 
 ```
@@ -22,7 +22,7 @@ serve build
 The `serve` will conduct you with the url you need to visit.
 
 ## Development
-To run development version, run the codes below in Terminal:
+To run development version, run the codes below in terminal:
 
 ```
 cd path/to/juniqe-task

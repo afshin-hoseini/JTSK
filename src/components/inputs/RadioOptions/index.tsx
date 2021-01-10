@@ -2,6 +2,9 @@ import { ComponentProps, FC, useMemo } from 'react';
 import { RadioButton } from 'src/components/RadioButton';
 import './style.css';
 
+/**
+ * Represents options in format of Radio Buttons.
+ */
 export const RadioOptions: FC<RadioOptionsProps<ComponentProps<'input'>>> = ({
   options,
   value,

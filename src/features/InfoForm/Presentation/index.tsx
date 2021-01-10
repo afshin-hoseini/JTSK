@@ -8,6 +8,9 @@ import { InfoFormComponentProps, InfoFormValues } from '../@types';
 import { GenderOptions } from '../utils';
 import './style.css';
 
+/**
+ * Presentational component for information form.
+ */
 export const InfoFormComponent: FC<InfoFormComponentProps> = ({
   className = '',
   handleSumbit,

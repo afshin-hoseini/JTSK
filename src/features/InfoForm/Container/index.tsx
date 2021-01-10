@@ -3,6 +3,9 @@ import { InfoFormErrors, InfoFormProps, InfoFormValues } from '../@types';
 import { InfoFormComponent } from '../Presentation';
 import { validateFormValues } from '../utils';
 
+/**
+ * Represents and handle Info form.
+ */
 export const InfoForm: FC<InfoFormProps> = ({ className }) => {
   const [errors, setErrors] = useState<InfoFormErrors>();
   const { submitInfoForm, submiting } = useSumbit();

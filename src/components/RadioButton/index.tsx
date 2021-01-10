@@ -2,6 +2,9 @@ import { FC } from 'react';
 import { RadioButtonProps } from './@types';
 import './style.css';
 
+/**
+ * Renders a custom Radio Button.
+ */
 export const RadioButton: FC<RadioButtonProps> = ({ id = '', label = '', className = '', ...props }) => {
   return (
     <label className={`lbl ${className} radio-button radio-button__container`} htmlFor={id}>
